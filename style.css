@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat:wght@300&family=Poppins:wght@200;500&display=swap');
+
+/** Bases **/
+
+body{
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+ul {
+    font-family: "Alkatra", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.btns {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
