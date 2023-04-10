@@ -5,6 +5,7 @@
 body{
     margin: 0;
     font-size: 20px;
+    width: 100%;
 }
 
 h1, h2 {
@@ -27,6 +28,14 @@ p {
     font-weight: 200;
 }
 
+header, footer {
+    background: #000814;
+}
+
+ul {
+    list-style: none;
+}
+
 /** Navbar **/
 
 #logo {
@@ -36,10 +45,6 @@ p {
 
 .link {
     color: #FFFF;
-}
-
-nav {
-    background: #000814;
 }
 
 nav li {
