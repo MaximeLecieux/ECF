@@ -29,7 +29,7 @@ p {
     font-weight: 300;
 }
 
-.btns {
+.button {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
 }
@@ -71,11 +71,6 @@ nav li:hover {
 }
 
 /** ======== Index.html ======== **/
-
-section {
-    width: 100%;
-    height: 100%;
-}
 
 .welcome-section {
     position: relative;
