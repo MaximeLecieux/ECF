@@ -76,16 +76,71 @@ nav li:hover {
     position: relative;
 }
 
+/** third section **/
+
+.presentation-section {
+    background: #001D3D;
+    margin: auto;
+}
+
+.presentation-button {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 175px;
+    height: 75px;
+}
+
+.presentation-text {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 80%;
+    border: #FFC300 solid 2px;
+}
+
+.button {
+    border: solid #000814 2px;
+    border-radius: 5px;
+    background: #FFC300;
+    width: 100%;
+    height: 100%;
+}
+
+.button:hover {
+    background: white;
+    transition: 0.8s;
+}
+
 @media screen and (min-width: 577px) {
 
     h1 {
         font-size: 3.5rem;
     }
+
+    .presentation-button {
+        width: 200px;
+        height: 75px;
+        margin-top: 75px;
+        margin-bottom: 50px;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
 
     h1 {
         font-size: 4.5rem;
+    }
+
+    .presentation-button {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .presentation-text {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
