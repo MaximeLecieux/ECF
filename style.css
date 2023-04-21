@@ -31,7 +31,7 @@ p {
 
 .button {
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 header, footer {
@@ -72,6 +72,8 @@ nav li:hover {
 
 /** ======== Index.html ======== **/
 
+/** first section **/
+
 .welcome-section {
     position: relative;
 }
@@ -79,24 +81,20 @@ nav li:hover {
 /** third section **/
 
 .presentation-section {
-    background: #001D3D;
     margin: auto;
+    height: 60vh;
 }
 
-.presentation-button {
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    width: 175px;
-    height: 75px;
+.div-button {
+    background: #003566;
+}
+
+.div-text {
+    background: #001D3D;
 }
 
 .presentation-text {
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
     padding: 20px;
-    width: 80%;
     border: #FFC300 solid 2px;
 }
 
@@ -104,8 +102,9 @@ nav li:hover {
     border: solid #000814 2px;
     border-radius: 5px;
     background: #FFC300;
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 50px;
+    font-size: 1em;
 }
 
 .button:hover {
@@ -113,34 +112,51 @@ nav li:hover {
     transition: 0.8s;
 }
 
+/** footer **/
+
+.div-footer{
+    padding-top: 20px;
+}
 @media screen and (min-width: 577px) {
 
+    /** Bases **/
     h1 {
         font-size: 3.5rem;
     }
 
-    .presentation-button {
-        width: 200px;
-        height: 75px;
-        margin-top: 75px;
-        margin-bottom: 50px;
+    /** ======== Index.html ======== **/
+    /** third section **/
+
+    .presentation-section {
+        min-height: 70vh;
+    }
+
+    .presentation-text {
+        margin-right: 20%;
+    }
+
+    .button {
+        width: 300px;
+        height: 100px;
+        font-size: 1.2em;
     }
 
 }
 
 @media screen and (min-width: 992px) {
 
+    /** Bases **/
     h1 {
         font-size: 4.5rem;
     }
 
-    .presentation-button {
-        margin-top: 100px;
-        margin-bottom: 100px;
+    /** ======== Index.html ======== **/
+    /** third section **/
+    .presentation-section {
+        min-height: 80vh;
     }
-
     .presentation-text {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-right: 40%;
+        font-size: 1.2em;
     }
 }
