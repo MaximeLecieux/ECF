@@ -7,6 +7,7 @@ body{
     margin: 0;
     font-size: 20px;
     width: 100%;
+    background: #001d3d;
 }
 
 h1 {
@@ -70,12 +71,12 @@ nav li:hover {
     transition: 0.8s;
 }
 
-/** Connexion modal **/
+/** Connexion modal + form registration.html **/
 
 .div-form {
     border: #FFC300 5px solid;
     border-radius: 5px;
-    background: #003566
+    background: #003F7A
   }
 
 /** ======== Index.html ======== **/
@@ -125,6 +126,15 @@ nav li:hover {
 .div-footer{
     padding-top: 20px;
 }
+
+/** ======== registration.html ======== **/
+
+.registrationForm{
+    max-width: 85%;
+    text-align: center;
+}
+
+
 @media screen and (min-width: 577px) {
 
     /** Bases **/
