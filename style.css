@@ -70,6 +70,14 @@ nav li:hover {
     transition: 0.8s;
 }
 
+/** Connexion modal **/
+
+.div-form {
+    border: #FFC300 5px solid;
+    border-radius: 5px;
+    background: #003566
+  }
+
 /** ======== Index.html ======== **/
 
 /** first section **/
