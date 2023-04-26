@@ -131,7 +131,10 @@ nav li:hover {
 
 .registrationForm{
     max-width: 85%;
-    text-align: center;
+}
+
+.registrationForm form div{
+    width: 100%;
 }
 
 
@@ -159,6 +162,16 @@ nav li:hover {
         font-size: 1.2em;
     }
 
+    /** ======== registration.html ======== **/
+
+    .registrationForm{
+        max-width: 45%;
+    }
+
+    .registrationForm form div{
+        width: 85%;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -177,4 +190,14 @@ nav li:hover {
         margin-right: 40%;
         font-size: 1.2em;
     }
+    /** ======== registration.html ======== **/
+
+    .registrationForm{
+        max-width: 35%;
+    }
+
+    .registrationForm form div{
+        width: 100%;
+    }
+    
 }
