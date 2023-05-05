@@ -105,16 +105,14 @@
                     <form method="POST" action="connexion.php" id="connexionForm"> <!--Script PHP didn't work yet-->
                         <div class="mb-3">
                             <label for="email" class="form-label">Votre adresse mail</label>
-                            <input type="text" name="" id="email" class="input-form form-control">
-                            <div>
-                            <span id="errorEmail"></span> 
-                            </div>
+                            <input type="email" id="emailConnexionForm" class="input-form form-control">
+                            <span id="errorEmailConnexionForm"></span>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Votre mot de passe</label>
-                            <input type="password" name="" id="password" class="input-form form-control">
+                            <input type="password" id="passwordConnexionForm" class="input-form form-control">
                             <div>
-                            <span id="errorPassword"></span> 
+                            <span id="errorPasswordConnexionForm"></span> 
                             </div>
                         </div>
                         <div class="mb-3">
@@ -129,6 +127,6 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <script src="validateConnexionForm.js"></script>
+        <script src="validateForm.js"></script>
     </body>
 </html>
