@@ -125,20 +125,14 @@ nav li:hover {
 
 .presentation-section {
     margin: auto;
-    height: 60vh;
-}
-
-.div-button {
-    background: #003566;
-}
-
-.div-text {
-    background: #001D3D;
+    background: #003F7A;
+    min-height: 80vh;
 }
 
 .presentation-text {
     padding: 20px;
     border: #FFC300 solid 2px;
+    background: #001d3d;
 }
 
 .button {
