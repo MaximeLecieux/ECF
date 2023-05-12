@@ -27,7 +27,7 @@ connexionForm.addEventListener('submit', function(e){ // validate form for modal
     }
 })
 
-allergyYesCheck.addEventListener('change', function(e){ // input creation function to indicate allergies
+allergyYesCheck.addEventListener('change', function(e){ // input creation function to indicate allergies for registration.html
     let parent = document.getElementById('allergyYesChecked')
     let allergies = document.createElement("INPUT");
     allergies.setAttribute("type", "text");
