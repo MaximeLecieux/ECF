@@ -60,6 +60,11 @@
                                 <span id="errorPasswordRegistrationForm"></span>
                             </div>
                             <div class="mb-3">
+                                <label for="nameRegistrationForm" class="form-label">Indiquer un nom de réservation</label>
+                                <input type="text" class="form-control" id="nameRegistrationForm">
+                                <span id="errorNameRegistrationForm"></span>
+                            </div>
+                            <div class="mb-3">
                                 <span>Avez-vous des allergies ?</span>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="option-allergy" id="allergyNo" checked>
@@ -76,13 +81,16 @@
                                 <div id="allergyYesChecked">   
                                 </div>
                                 </div>
-                                <div class="mb-3">
+                                <div class="mb-4">
                                     <label for="numberCoversRegistrationForm" class="form-label">Indiquer un nombre de couvert par défaut</label>
                                     <input type="number" class="form-control" id="numberCoversRegistrationForm" min="1" max="10">
                                     <span id="errorNumberCoversRegistrationForm"></span>
                                 </div>
-                                <div class="mb-3">
-                                    <button type="submit" class="btn btn-success">S'inscrire</button>
+                                <div class="mb-4 text-center">
+                                    <p>Vos informations seront uniquement utilisées afin de vous permettre de réserver plus rapidement après connexion</p>
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <button type="submit" class="btn btn-success btn-lg">S'inscrire</button>
                                 </div>
                         </form>    
                     </div>
@@ -107,7 +115,7 @@
                                     <li class="col-md-3">12:00 - 14:00<br>19:00 - 22:00</li>
                                 </ul>
                             </li>
-                            <li class="p-2" class="p-2">
+                            <li class="p-2">
                                 <ul class="row justify-content-center">
                                     <li class="col-md-3">Mercredi</li>
                                     <li class="col-md-3">Fermé</li>

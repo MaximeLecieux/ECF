@@ -2,6 +2,7 @@ let registrationForm = document.getElementById('registrationForm')
 let connexionForm = document.getElementById('connexionForm')
 let allergyYesCheck = document.getElementById('allergyYes')
 let validatePasswordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/ // Regex for strong password
+let regexValidationNameForm = /^[a-zA-Z-\s]+$/ // Regex for validation name
 
 connexionForm.addEventListener('submit', function(e){ // validate form for modal connexion
     let emailConnexionForm = document.getElementById('emailConnexionForm')
@@ -40,7 +41,7 @@ registrationForm.addEventListener('submit', function(e){ // validate form for re
     let emailRegistrationForm = document.getElementById('emailRegistrationForm')
     let passwordRegistrationForm = document.getElementById('passwordRegistrationForm')
     let numberCoversRegistrationForm = document.getElementById('numberCoversRegistrationForm')
-    console.log(numberCoversRegistrationForm.value)
+    let nameRegistrationForm = document.getElementById('nameRegistrationForm')
 
     if (emailRegistrationForm.value.trim() === ""){
         let errorEmailRegistrationForm = document.getElementById('errorEmailRegistrationForm')
@@ -58,6 +59,18 @@ registrationForm.addEventListener('submit', function(e){ // validate form for re
         let errorPasswordRegistrationForm = document.getElementById('errorPasswordRegistrationForm')
         errorPasswordRegistrationForm.innerHTML = "Un mot de passe valide est requis (8 caractères minimum, une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial)"
         errorPasswordRegistrationForm.style.color = "red"
+        e.preventDefault()
+    }
+
+    if (nameRegistrationForm.value.trim() === ""){
+        let errorNameRegistrationForm = document.getElementById('errorNameRegistrationForm')
+        errorNameRegistrationForm.innerHTML = "Un nom de réservation est obligatoire"
+        errorNameRegistrationForm.style.color = "red"
+        e.preventDefault()
+    } else if (regexValidationNameForm.test(nameRegistrationForm.value) === false){
+        let errorNameRegistrationForm = document.getElementById('errorNameRegistrationForm')
+        errorNameRegistrationForm.innerHTML = "Un nom de réservation valide est requis"
+        errorNameRegistrationForm.style.color = "red"
         e.preventDefault()
     }
 
