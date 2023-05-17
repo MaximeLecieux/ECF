@@ -12,29 +12,38 @@ body{
 
 h1 {
     font-family: "Libre Baskerville", sans-serif ;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 h3{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+h5{
+    font-size: 1.5rem;
 }
 
 ul {
     font-family: "Alkatra", sans-serif;
     font-weight: 400;
     padding: 0;
+    list-style: none;
 }
 
 p {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
 }
 
 .button {
@@ -46,19 +55,15 @@ header, footer {
     background: #000814;
 }
 
-ul {
-    list-style: none;
-}
-
 /** Navbar **/
 
 #logo {
-    width: 200px;
-    height: 200px;
+    width: 75px;
+    height: 75px;
 }
 
 .menu-navbar{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .link {
@@ -67,8 +72,8 @@ ul {
 
 nav li {
     width: 300px;
-    height: 100px;
-    margin: 40px;
+    height: 75px;
+    margin: 20px;
     padding: 10px;
     border-radius: 2px;
 }
@@ -92,15 +97,15 @@ nav li:hover {
   }
 
 #connexionForm{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 #reservationForm{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 #registrationForm{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 /** ======== Index.html ======== **/
@@ -111,6 +116,9 @@ nav li:hover {
     position: relative;
 }
 
+.site-title{
+    width: 300px;
+}
 /** picture gallery **/
 
 .image-content{
@@ -166,9 +174,9 @@ nav li:hover {
     border: solid #000814 2px;
     border-radius: 10px;
     background: #FFC300;
-    width: 450px;
-    height: 150px;
-    font-size: 2.5rem;
+    width: 250px;
+    height: 75px;
+    font-size: 1.3rem;
 }
 
 .button:hover {
@@ -176,15 +184,220 @@ nav li:hover {
     transition: 0.8s;
 }
 
-/** footer **/
+/** Footer **/
 
 .div-footer{
-    padding-top: 50px;
-    font-size: 2.5rem;
+    padding-top: 10px;
+    font-size: 1.5rem;
 }
 
 /** ======== menu.html ======== **/
 
 .price-span{
-    font-size: 3.5rem;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){ /** Tablet landscape version **/
+    
+    /** Bases **/
+
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h5{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    /** Navbar **/
+
+    #logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu-navbar{
+        font-size: 1.5rem;
+    }
+
+    #svg-navbar{
+        width: 75px;
+        height: 75px;
+    }
+
+    /** ======== index.html ======== **/
+
+    /** First section **/
+
+    .site-title{
+        width: 500px;
+    }
+
+    /** third section **/
+    
+    .button {
+        width: 400px;
+        height: 100px;
+        font-size: 1.5rem;
+    }
+
+    /** Footer **/
+
+    iframe{
+        width: 500px;
+        height: 350px;
+    }
+
+    /** ======== menu.html ======== **/
+
+    .price-span{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){ /** Tablet portrait version **/
+
+    /** Bases **/
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
+    /** Connexion modal + form registration.html + Reservation modal**/
+
+    #connexionForm{
+        font-size: 1.8rem;
+    }
+    
+    #reservationForm{
+        font-size: 1.8rem;
+    }
+    
+    #registrationForm{
+        font-size: 1.8rem;
+    }
+
+    /** Navbar **/
+
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav li {
+        width: 200px;
+        height: 75px;
+    }
+
+    .menu-navbar{
+        font-size: 1.8rem;
+    }
+
+    /** ======== Index.html ======== **/
+
+    /** First section **/
+
+    .site-title{
+        width: 500px;
+    }
+
+    /** third section **/
+
+    .button {
+        font-size: 1.8rem;
+    }
+
+    .presentation-button{
+        background: none;
+    }
+
+    /** ======== menu.html ======== **/
+
+    .price-span{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1281px){
+
+    /** Bases **/
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    h4{
+        font-size: 1.8rem;
+    }
+
+    h5{
+        font-size: 1.6rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
+    /** ======== Index.html ======== **/
+
+    /** first section **/
+
+    .site-title{
+        width: 1000px;
+    }
+
+    /** third section **/
+
+    .button {
+        width: 400px;
+        height: 150px;
+        font-size: 2rem;
+    }
+
+    .presentation-button{
+        background: none;
+    }
+
+    /** Footer **/
+
+    iframe{
+        width: 800px;
+        height: 350px;
+    }
+
+    /** ======== menu.html ======== **/
+
+    .price-span{
+        font-size: 2rem;
+    }
+
 }
